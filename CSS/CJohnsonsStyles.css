@@ -1,0 +1,512 @@
+body {
+    background-color: #ddd;
+    overflow-y: scroll
+}
+
+#page {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto
+}
+
+.banner {
+    padding-top: 150px;
+    width: 100%;
+    height: 300px;
+    background-color: #56b6ff;
+    color: #006977;
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-style: bold;
+    text-align: center;
+    transition: .3s;
+    font-family: 'Raleway', sans-serif
+}
+
+h1 {
+    color: #afdcff;
+    text-align: center
+}
+
+h2 {
+    margin: 0;
+    padding-top: 5px;
+    height: 40px;
+    color: #afdcff;
+    text-align: center;
+    background-color: #002542;
+    font-family: 'Raleway', sans-serif
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif
+}
+
+ul {
+    padding: 8px 8px 8px 32px;
+    font-size: 20px;
+    color: #000;
+    list-style-type: square;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none
+}
+
+a {
+    color: #003966
+}
+
+a:hover {
+    color: #88c9fc;
+    text-decoration: underline
+}
+
+#eng {
+    float: right;
+    width: 8%;
+    height: auto
+}
+
+#list {
+    padding: 8px 8px 8px 32px;
+    background-color: #ededed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px
+}
+
+.lang {
+    padding: 30px;
+    position: relative;
+    width: 25%
+}
+
+.profilepic {
+    position: relative;
+    float: left;
+    width: 30%;
+    z-index: 1
+}
+
+.maincontainer {
+    position: absolute;
+    left: 30%;
+    width: 70%
+}
+
+.aboutcontainer {
+    position: absolute;
+    left: 125%;
+    width: 70%;
+    display: none
+}
+
+.workcontainer {
+    position: absolute;
+    left: 150%;
+    width: 70%;
+    display: none
+}
+
+.educontainer {
+    position: absolute;
+    left: 175%;
+    width: 70%;
+    display: none
+}
+
+.langcontainer {
+    position: absolute;
+    left: 200%;
+    width: 70%;
+    display: none
+}
+
+.skillscontainer {
+    position: absolute;
+    left: 200%;
+    width: 70%;
+    display: none
+}
+table, tr,th, td{
+    border: 2px solid #56b6ff;
+    border-collapse: collapse;
+    padding: 2px;
+}
+table {
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+#main {
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    width: 80%;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden
+}
+
+#summary {
+    float: left;
+    width: 40%
+}
+
+#summary2 {
+    display: none
+}
+
+#pitch {
+    float: left;
+    width: 55%
+}
+
+#pitchp {
+    font-size: 17px
+}
+
+#aboutme {
+    color: #000;
+    background-color: #ededed;
+    padding: 0 8px 8px 32px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif
+}
+
+#maintext {
+    float: right;
+    width: 70%
+}
+
+#buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around
+}
+
+.btn {
+    width: 100%;
+    background-color: #0f6bff;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1
+}
+
+.btn:hover {
+    background-color: #7fb0ff;
+    transition: .3s
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.links {
+    display: none
+}
+
+#links {
+    position: absolute;
+    bottom: 0;
+    background-color: aqua;
+    width: 70%;
+    height: 80px;
+    padding-top: 20px;
+    overflow: hidden
+}
+
+.fab,
+.fas {
+    font-size: 60px;
+    padding-left: 30px
+}
+
+@media only screen and (max-width: 1700px) {
+    #links {
+        height: 60px;
+        padding-top: 15px
+    }
+    .fab,
+    .fas {
+        font-size: 40px;
+        padding-left: 30px
+    }
+}
+
+@media only screen and (max-width: 1620px) {
+    #links {
+        display: none
+    }
+    .banner {
+        font-size: 50px;
+        padding-top: 90px;
+        transition: .3s
+    }
+    .fab,
+    .fas {
+        font-size: 100px
+    }
+    .links {
+        display: block;
+        text-align: center;
+        top: 0;
+        margin-top: 0;
+        background-color: aqua;
+        width: 100%;
+        height: 80px
+    }
+    h1 {
+        margin-top: 0;
+    }
+    .fab,
+    .fas {
+        padding-top: 10px;
+        font-size: 50px
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .profilepic {
+        position: relative;
+        float: top;
+        width: 30%;
+        z-index: 1
+    }
+    #summary {
+        float: left;
+        width: 40%
+    }
+    #pitch {
+        width: 58%
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .maincontainer {
+        width: 70%;
+    }
+    .aboutcontainer {
+        width: 70%;
+    }
+    .workcontainer {
+        width: 70%;
+    }
+    .educontainer {
+        width: 70%;
+    }
+    .langcontainer {
+        width: 70%;
+    }
+    .skillscontainer {
+        width: 70%;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px) {
+    .banner {
+        height: 250px;
+        font-size: 40px;
+        letter-spacing: 3px;
+        transition: .3s
+    }
+    #main {
+        height: 70%;
+        top: 250px;
+        overflow-y: scroll;
+        left: 5%;
+        width: 90%
+    }
+    .maincontainer {
+        left: 0;
+        width: 100%
+    }
+    #maintext {
+        float: left;
+        width: 100%
+    }
+    #summary {
+        display: none
+    }
+    #summary2 {
+        display: block;
+        text-align: center
+    }
+    #pitch {
+        margin-left: 5%;
+        width: 90%
+    }
+    .profilepic {
+        position: relative;
+        float: top;
+        width: 30%;
+        z-index: 1
+    }
+    li {
+        text-align: center
+    }
+    #buttons {
+        width: 100%
+    }
+    .aboutcontainer {
+        left: 125%;
+        width: 100%;
+        display: none
+    }
+    .workcontainer {
+        position: absolute;
+        left: 150%;
+        width: 100%;
+        display: none
+    }
+    .educontainer {
+        position: absolute;
+        left: 175%;
+        width: 100%;
+        display: none
+    }
+    .langcontainer {
+        position: absolute;
+        left: 200%;
+        width: 100%;
+        display: none
+    }
+    .skillscontainer {
+        position: absolute;
+        left: 200%;
+        width: 100%;
+        display: none
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .profilediv {
+        display: table;
+        width: 100%;
+        height: auto
+    }
+    #summary2 {
+        float: right;
+        width: 50%
+    }
+    .profilepic {
+        position: relative;
+        float: top;
+        width: 50%
+    }
+    #main {
+        height: 100%;
+        overflow-y: scroll;
+        top: 300px;
+        left: 5%;
+        width: 90%
+    }
+    .links {
+        display: block;
+        text-align: center;
+        top: 0;
+        margin-top: 0;
+        background-color: aqua;
+        width: 100%;
+        height: 100px
+    }
+    .fab,
+    .fas {
+        padding-top: 20px;
+        font-size: 60px
+    }
+    #buttons {
+        width: 100%;
+        display: block
+    }
+    .btn {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        transition: .3s;
+        z-index: 1
+    }
+    .btn:hover {
+        background-color: #7fb0ff
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .banner {
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-top: 50px;
+        width: 100%;
+        height: 130px;
+        font-size: 40px;
+        font-style: bold;
+        text-align: center;
+        transition: .3s
+    }
+    #main {
+        position: absolute;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        height: 100%;
+        top: 200px;
+        left: 5%;
+        width: 90%;
+        z-index: 1;
+        background-color: #fff
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+        background: transparent
+    }
+    #maintext {
+        width: 100%
+    }
+    .maincontainer {
+        left: 0;
+        width: 100%
+    }
+    #summary {
+        display: block;
+        width: 100%
+    }
+    #summary2 {
+        display: none
+    }
+    #pitch {
+        margin-left: 5%;
+        width: 90%
+    }
+    #pitchp {
+        font-size: 17px
+    }
+    .profilepic {
+        position: relative;
+        float: top;
+        width: 100%;
+        z-index: 1
+    }
+    #buttons {
+        width: 100%;
+        display: block
+    }
+    .fab,
+    .fas {
+        text-align: left;
+        font-size: 30px
+    }
+}
